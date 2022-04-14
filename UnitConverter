@@ -1,0 +1,23 @@
+import javax.swing.*;
+import java.awt.*;
+
+public class Test extends JFrame{
+    public Test(){
+        setLayout(new GridLayout(4,2,5,5));
+        add(new JLabel("Unit Converter")); add(new JLabel());
+        add(new JLabel("Pound: "));
+        add(new JTextField());
+        add(new JLabel("kg: "));
+        add(new JTextField());
+        add(new JButton("Convert"));
+        add(new JButton("Clear"));
+    }
+    public static void main(String[] args){
+        JFrame base = new Test();
+        base.setSize(400,300);
+        base.setVisible(true);
+        base.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+
+    }
+
+}
